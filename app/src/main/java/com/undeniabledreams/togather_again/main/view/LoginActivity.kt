@@ -15,8 +15,6 @@ import java.io.IOException
 
 class LoginActivity : AppCompatActivity() {
 
-
-
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
