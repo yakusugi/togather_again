@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Family"
+        android:id="@+id/family"
+        android:icon="@drawable/family"
+        />
+    <item android:title="Interactions"
+        android:id="@+id/interactions"
+        android:icon="@drawable/interactions"
+        />
+    <item android:title="Album"
+        android:id="@+id/album"
+        android:icon="@drawable/photo_album"
+        />
+</menu>

@@ -69,7 +69,6 @@ class UserRegistrationDao(context: Context) {
                 override fun getParams(): Map<String, String> {
                     val params = HashMap<String, String>()
                     params["user_name"] = userDto.userName
-//                    params["password"] = userDto.password
                     params["password"] = hashPassword(userDto.password)
                     params["email"] = userDto.email
 
@@ -128,7 +127,7 @@ class UserRegistrationDao(context: Context) {
                 @Throws(AuthFailureError::class)
                 override fun getParams(): Map<String, String> {
                     val params = HashMap<String, String>()
-                    params["email"] = userDto.userName
+                    params["email"] = userDto.email
                     params["password"] = hashPassword(userDto.password) // Sending hashed password
                     return params
                 }
