@@ -40,6 +40,11 @@ class LoginActivity : AppCompatActivity() {
             try {
                 userRegistrationDao.logIn(userDto) { result ->
                     if (result == 1) {
+                        val sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
+                        val editor = sharedPreferences.edit()
+                        editor.putString("email", emailAddress)
+                        editor.apply()
+
                         Toast.makeText(this@LoginActivity, "Login successful!", Toast.LENGTH_SHORT).show()
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
