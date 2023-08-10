@@ -13,7 +13,7 @@
         android:layout_marginTop="16dp"
         android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/big_family"
+        app:srcCompat="@drawable/heart"
         tools:layout_editor_absoluteX="0dp"
         tools:ignore="MissingConstraints" />
 
